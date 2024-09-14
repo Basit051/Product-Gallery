@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0; 
+    box-sizing: border-box;
+    font-family: "Lora", serif;
+}
+.container{
+    width: 100%;
+    min-height: 100vh;
+    background: #d0eaff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.product{
+    width: 50%;
+    max-width: 750PX;
+    display: flex;
+}
+.gallery{
+    flex-basis: 50%;
+    background: white;
+    transform: scale(1.08);
+    box-shadow: -10px 5px 10px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+.gallery img{
+    width: 100%;
+    display: block;
+    padding-top: 100px;
+}
+.details{
+    flex-basis: 53%;
+    background: rgb(65, 46, 46);
+    padding: 40px;
+    padding-left: 60px;
+    box-shadow: -10px 5px 10px 10px rgba(0, 0, 0, 0.1);
+}
+.details h1{
+    color: white;
+    font-size: 35px;
+}
+.details h2{
+    color: white;
+    font-size: 30px;
+    font-weight: 650;
+}
+.details h3{
+    color: #FFDD47;
+    font-size: 20px;
+    margin-bottom: 20px;
+    font-style: italic;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Sevillana&display=swap');
+.details p{
+    color: white;
+    font-family: "Sevillana", cursive;
+}
+
+.details form{
+    font-style: 15px;
+    font-weight: 400;
+}
+.details input{
+    margin: 10px;
+}
+
+form button{
+    background-color: #FFDD47;
+    color: black;
+    font-size: 17px;
+    width: 100%;
+    padding: 10px;
+    border-radius: 30px;
+    border: 0;
+    outline: 0;
+    margin-top: 50px;
+    box-shadow: 0 10px 10px rgba(135, 231, 241, 0.5);
+    cursor: pointer;
+}
+form button:hover{
+    background-color: white;
+    color: #73693b;
+    font-size: 19px;
+    box-shadow: 0 10px 10px rgba(236, 236, 102, 0.7);
+}
+
+.controls{
+    position: absolute;
+    bottom: 40px;
+    right: 20px;
+}
+.btn{
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: black;
+    margin: 10px;
+    cursor: pointer;
+}
+.btn.active{
+    background: #FFDD47;
+}
